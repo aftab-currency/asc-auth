@@ -1,4 +1,5 @@
 {
+    "version" : "1.0.0",
     "name": "ace_asc/auth",
     "description": "Auth Php SDK",
     "type": "library",
@@ -8,7 +9,6 @@
             "name": "Zeeshan Arshad"
         }
     ],
-    "minimum-stability": "stable",
     "require": {
         "php": "^5.5 || ^7.0",
         "guzzlehttp/guzzle": "~6.0",
