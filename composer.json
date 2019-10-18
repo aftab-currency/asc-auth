@@ -5,8 +5,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Zeeshan Arshad",
-            "email": "developers.asc@gmail.com"
+            "name": "Zeeshan Arshad"
         }
     ],
     "minimum-stability": "dev",
