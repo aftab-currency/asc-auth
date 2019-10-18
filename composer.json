@@ -1,0 +1,23 @@
+{
+    "name": "ace/auth",
+    "description": "Auth Php SDK",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zeeshan Arshad",
+            "email": "developers.asc@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^5.5 || ^7.0",
+        "guzzlehttp/guzzle": "~6.0",
+        "ext-json": "*"
+      },
+    "autoload": {
+        "psr-0": {
+            "AceAuth": "src/"
+        }
+    }
+}
