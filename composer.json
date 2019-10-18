@@ -1,5 +1,5 @@
 {
-    "name": "ace/auth",
+    "name": "asc/auth",
     "description": "Auth Php SDK",
     "type": "library",
     "license": "MIT",
