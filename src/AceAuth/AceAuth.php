@@ -179,8 +179,8 @@ class AceAuth{
             $this->setRefreshToken($response['refresh_token']);
         }
         $user = $this->authentication->userinfo($this->accessToken);
-        if ($user!=='') {
-            $user=json_decode($user,true);
+        if ($user)
+        {
             if($user['code']===200)
             {
                 $this->setUser($user['user']);
