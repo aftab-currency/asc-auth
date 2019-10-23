@@ -83,8 +83,13 @@ class Authentication
     }
     public function userinfo($access_token)
     {
-        return $this->apiClient->method('get')
+        $options=array();
+        if (! isset($options['client_id'])) {
+            $options['client_id'] = $this->client_id;
+        }
+        return $this->apiClient->method('post')
         ->addPath('api/user')
+        ->withBody(json_encode($options))
         ->withHeader(new AuthorizationBearer($access_token))
         ->call();
     }
