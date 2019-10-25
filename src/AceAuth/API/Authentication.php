@@ -56,7 +56,7 @@ class Authentication
         }
 
         return sprintf(
-            'http://%s/oauth/authorize?%s',
+            '%s/oauth/authorize?%s',
             $this->domain,
             Psr7\build_query($additional_params)
         );
@@ -76,7 +76,7 @@ class Authentication
 
 
         return sprintf(
-            'http://%s/auth_logout?%s',
+            '%s/auth_logout?%s',
             $this->domain,
             Psr7\build_query($params)
         );
