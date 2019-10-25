@@ -30,7 +30,7 @@ class Authentication
         $this->scope         = $scope;
 
         $this->apiClient = new ApiClient( [
-            'domain' => 'http://'.$this->domain,
+            'domain' => $this->domain,
             'basePath' => '/'
         ] );
     }
@@ -157,7 +157,7 @@ class Authentication
     }
     protected function setApiClient()
     {
-        $apiDomain = "http://{$this->domain}";
+        $apiDomain = $this->domain;
 
         $client = new ApiClient(
             [
