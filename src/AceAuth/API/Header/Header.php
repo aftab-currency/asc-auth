@@ -52,6 +52,6 @@ class Header
      */
     public function get()
     {
-        return "{$this->header}: {$this->value}\n";
+        return "{$this->header}: {$this->value}";
     }
 }
