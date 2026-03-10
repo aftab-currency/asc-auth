@@ -58,7 +58,7 @@ class Authentication
         return sprintf(
             '%s/oauth/authorize?%s',
             $this->domain,
-            Psr7\build($additional_params)
+            http_build_query($additional_params, '', '&', PHP_QUERY_RFC3986)
         );
     }
 
@@ -78,7 +78,7 @@ class Authentication
         return sprintf(
             '%s/auth_logout?%s',
             $this->domain,
-            Psr7\build($params)
+            http_build_query($additional_params, '', '&', PHP_QUERY_RFC3986)
         );
     }
     public function userinfo($access_token)
